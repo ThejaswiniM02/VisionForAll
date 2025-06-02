@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Color Vision Simulator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VisionForAll - CVD Simulator</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h2>Simulate CVD</h2>
-  <button id="protanopia-btn">Protanopia</button>
-  <button id="deuteranopia-btn">Deuteranopia</button>
-  <button id="tritanopia-btn">Tritanopia</button>
-  <button id="reset-btn">Reset</button>
+  <h2>Color Vision Simulator</h2>
+
+  <div class="card protanopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="protanopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Protanopia</span>
+    </label>
+  </div>
+
+  <div class="card deuteranopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="deuteranopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Deuteranopia</span>
+    </label>
+  </div>
+
+  <div class="card tritanopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="tritanopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Tritanopia</span>
+    </label>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
