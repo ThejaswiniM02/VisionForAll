@@ -13,6 +13,57 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Expandable Mode Button */
+.mode-select-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.expandable-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(138, 78, 191, 0.3);
+}
+
+.expandable-btn:hover {
+  background-color: #121013;
+}
+
+#mode-buttons {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#mode-buttons button {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+#mode-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Toggle container visibility */
+#toggleContainer {
+  display: none;
+}
+
 /* Card container for each toggle */
 .card {
   border-radius: 16px;
@@ -89,15 +140,16 @@ h2 {
   font-size: 16px;
   font-weight: 600;
 }
+
 /* Brighter background when toggled on */
 .protanopia-card input:checked + .slider {
-  background-color: #ff4d4d; /* Brighter red */
+  background-color: #ff4d4d;
 }
 
 .deuteranopia-card input:checked + .slider {
-  background-color: #28a745; /* Brighter green */
+  background-color: #28a745;
 }
 
 .tritanopia-card input:checked + .slider {
-  background-color: #007bff; /* Brighter blue */
+  background-color: #007bff;
 }
