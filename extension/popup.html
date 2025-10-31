@@ -7,48 +7,31 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h2>ColorTune</h2>
+  <h2>Color Vision Simulator</h2>
 
-  <!-- Expandable Mode Button -->
-  <div class="mode-select-container">
-    <button class="expandable-btn" id="toggleModes">
-      Select Mode
-      <span id="toggleIcon">&#9660;</span>
-    </button>
-    <div id="mode-buttons">
-      <button id="simulation-btn">CVD Simulation Mode</button>
-      <button id="correction-btn">CVD Correction Mode</button>
-    </div>
+  <div class="card protanopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="protanopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Protanopia</span>
+    </label>
   </div>
 
-  <!-- Toggle Cards -->
-  <div id="toggleContainer">
-    <div class="card protanopia-card">
-      <label class="toggle">
-        <input type="checkbox" id="protanopia-toggle" />
-        <span class="slider"></span>
-        <span class="label-text">Protanopia</span>
-      </label>
-    </div>
-
-
-    <div class="card deuteranopia-card">
-      <label class="toggle">
-        <input type="checkbox" id="deuteranopia-toggle" />
-        <span class="slider"></span>
-        <span class="label-text">Deuteranopia</span>
-      </label>
-    </div>
-
-    <div class="card tritanopia-card">
-      <label class="toggle">
-        <input type="checkbox" id="tritanopia-toggle" />
-        <span class="slider"></span>
-        <span class="label-text">Tritanopia</span>
-      </label>
-    </div>
+  <div class="card deuteranopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="deuteranopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Deuteranopia</span>
+    </label>
   </div>
 
+  <div class="card tritanopia-card">
+    <label class="toggle">
+      <input type="checkbox" id="tritanopia-toggle" />
+      <span class="slider"></span>
+      <span class="label-text">Tritanopia</span>
+    </label>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
